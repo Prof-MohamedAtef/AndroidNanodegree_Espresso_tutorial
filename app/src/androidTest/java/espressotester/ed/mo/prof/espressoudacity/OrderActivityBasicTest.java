@@ -45,7 +45,6 @@ public class OrderActivityBasicTest {
             = new ActivityTestRule<>(OrderActivity.class);
 
     // TODO (3) Finish writing this test which will:
-
     @Test
     public void clickDecrementButton_ChangesQuntityAndCost(){
         //          - Check that the initial quantity is zero
@@ -57,8 +56,5 @@ public class OrderActivityBasicTest {
 
         // Verify that the increment button also increases the total cost to $5.00
         Espresso.onView(withId(R.id.cost_text_view)).check(matches(withText("$0.00")));
-    }
-
-    public void clickDecrementButton_ChangesQuantityAndCost() {
     }
 }
