@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:background="@android:color/darker_gray"
+    tools:context=".BackingApp.UI.Activities.DetailActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@color/divider"
+        android:id="@+id/fragment_container">
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:id="@+id/StepDetails"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="#000000"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/Video_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"></FrameLayout>
+        <FrameLayout
+            android:id="@+id/StepInstruction_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"></FrameLayout>
+    </LinearLayout>
+</LinearLayout>

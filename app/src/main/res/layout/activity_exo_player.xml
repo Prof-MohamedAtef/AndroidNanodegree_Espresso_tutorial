@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/StepDetails"
+    android:screenOrientation="landscape"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context="backingapp.ed.mo.prof.backingapp.UI.Activities.ExoPlayerActivity">
+        <FrameLayout
+            android:id="@+id/Video_player_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"/>
+        <LinearLayout
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/button_shape"
+                style="@style/ButtonText"
+                android:text="@string/prev_btn"
+                android:id="@+id/Pre_BTN"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"></LinearLayout>
+            <Button
+                android:background="@drawable/button_shape"
+                style="@style/ButtonText"
+                android:text="@string/next_btn"
+                android:id="@+id/Next_BTN"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>
