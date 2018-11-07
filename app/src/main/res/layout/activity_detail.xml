@@ -5,9 +5,4 @@
     android:layout_width="match_parent"
     android:background="@color/divider"
     android:id="@+id/fragment_container">
-    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:id="@+id/master_list_fragment"-->
-        <!--android:name="espressotester.ed.mo.prof.espressoudacity.BackingApp.UI.Fragments.MasterListFragment"/>-->
 </LinearLayout>

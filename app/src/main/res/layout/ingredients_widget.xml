@@ -3,14 +3,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/pizza"
     android:padding="@dimen/widget_margin">
-    <!--android:background="#09C"-->
-    <!--<ImageView-->
-        <!---->
-    <!--android:src="@drawable/pizza"-->
-        <!--android:id="@+id/imageWidget"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignTop="@id/appwidget_text"/>-->
     <TextView
         android:id="@+id/appwidget_text"
         android:layout_width="wrap_content"
@@ -24,5 +16,4 @@
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
         android:textStyle="bold|italic" />
-    <!--android:background="#09C"-->
 </RelativeLayout>

@@ -56,9 +56,6 @@ public class IngredientsWidgetService extends IntentService {
             AppWidgetManager appWidgetManager= AppWidgetManager.getInstance(this);
             int[] appWidgetIds=appWidgetManager.getAppWidgetIds(new ComponentName(this, IngredientsWidgetProvider.class));
             IngredientsWidgetProvider.updateAppWidget(this,IngredientsStr,appWidgetManager,appWidgetIds);
-//                    for (int appWidgetId : appWidgetIds) {
-//            updateAppWidget(context, appWidgetManager, appWidgetId);
-//        }
         }
     }
 

@@ -23,5 +23,4 @@
         android:textColor="@color/white"
         android:textSize="22sp"
         android:padding="16dp"/>
-    <!--style="@style/Base.TextAppearance.AppCompat.Body1"-->
 </FrameLayout>

@@ -22,11 +22,7 @@ public class IngredientsWidgetProvider extends AppWidgetProvider {
         PendingIntent pendingIntent= PendingIntent.getActivity(context,0,intent,0);
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.ingredients_widget);
-//        Intent ingredientsIntent = new Intent(context, IngredientsWidgetService.class);
-//        ingredientsIntent.setAction(IngredientsWidgetService.ACTION_Ingredients);
-//        PendingIntent ingredientsPendingIntent = PendingIntent.getService(context, 0, ingredientsIntent , PendingIntent.FLAG_UPDATE_CURRENT);
         views.setTextViewText(R.id.appwidget_text, widgetText);
-//        views.setImageViewResource(R.id.imageWidget, R.drawable.pizza);
         views.setOnClickPendingIntent(R.id.appwidget_text,pendingIntent);
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
@@ -35,9 +31,6 @@ public class IngredientsWidgetProvider extends AppWidgetProvider {
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         // There may be multiple widgets active, so update all of them
-//        for (int appWidgetId : appWidgetIds) {
-//            updateAppWidget(context,"", appWidgetManager, appWidgetIds);
-//        }
         IngredientsWidgetService.startActionFillWidget(context);
     }
 
